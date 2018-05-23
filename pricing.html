@@ -1,0 +1,1912 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Wireless Pricing</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">  
+    <!--  <link rel="stylesheet" href="form.css" >-->
+        <script src="form.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+ 
+ $("a#m2m").css("background-color", "#4ed2bee0")
+  $("a#mhomebm2m").css("background-color", "#4ed2bee0")
+   	$("a#mhomepm2m").css("background-color","#007bff")
+   	$("a#mbussm2m").css("background-color", "#6c757d")
+   	$("a#mbussum2m").css("background-color","#6c757d")
+   	$("a#mbusswm2m").css("background-color","#6c757d")
+$(".btn-block").click (function(){
+ var myBookId = $(this).data('id');
+     $(".modal-body #line").val( myBookId );    
+}); 
+ 
+    $("a#m2m").click(function(){
+        $("#submenum2m").css("display", "block");
+      
+        $("#submenusc").css("display", "none");
+        $("#submenuhc").css("display", "none");
+        $("a#m2m").button('toggle')
+         
+   	$("a#sc").button('dispose')
+   	$("a#hc").button('dispose')
+   	$("a#m2m").css("background-color", "#4ed2bee0")
+   	$("a#sc").css("background-color","#007bff")
+   	$("a#hc").css("background-color","#007bff")
+   	 $("a#mhomebm2m").css("background-color", "#4ed2bee0")
+   	$("a#mhomepm2m").css("background-color","#007bff")
+   	$("a#mbussm2m").css("background-color", "#6c757d")
+   	$("a#mbussum2m").css("background-color","#6c757d")
+   	$("a#mbusswm2m").css("background-color","#6c757d")
+          $("#homebm2m").css("display", "block");
+          $("#homebm2mc").css("display", "block");  
+      
+         $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+          $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+          
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+   	
+    });
+    
+
+    $("a#sc").click(function() {
+        $("#submenum2m").css("display", "none");
+        $("#submenusc").css("display", "block");       
+ 	$("#submenuhc").css("display", "none");
+ 	 
+ 	 $("a#m2m").button('dispose')
+ 	 $("a#sc").css("background-color", "#4ed2bee0") 	  
+ 	 $("a#m2m").css("background-color","#007bff")
+ 	 $("a#hc").css("background-color","#007bff")
+ 	       $("a#mhomebsc").css("background-color", "#4ed2bee0")
+   	$("a#mhomepsc").css("background-color","#007bff")
+   	$("a#mbusssc").css("background-color", "#6c757d")
+   	$("a#mbussusc").css("background-color","#6c757d")
+   	$("a#mbusswsc").css("background-color","#6c757d")
+ 	  
+   	 $("a#sc").button('toggle')
+   	 $("a#hc").button('dispose')
+   	  <!-- Default  -->
+       
+         $("#homebsc").css("display", "block");
+         $("#homebscc").css("display", "block"); 
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+           $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+          $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+         
+         
+          
+    });
+     $("a#hc").click(function() {
+        $("#submenum2m").css("display", "none");
+        $("#submenusc").css("display", "none");
+ 	$("#submenuhc").css("display", "block");
+ 	 $("a#m2m").button('dispose');
+   	 $("a#sc").button('dispose');
+   	 $("a#hc").button('toggle');
+   	 $("a#m2m").css("background-color", "#007bff")
+   	$("a#sc").css("background-color","#007bff")
+   	$("a#hc").css("background-color","#4ed2bee0")
+    
+            $("a#mhomebhc").css("background-color", "#4ed2bee0")
+   	$("a#mhomephc").css("background-color","#007bff")
+   	$("a#mbusshc").css("background-color", "#6c757d")
+   	$("a#mbussuhc").css("background-color","#6c757d")
+   	$("a#mbusswhc").css("background-color","#6c757d")	
+   	  $("#homebhc").css("display", "block");
+         $("#homebhcc").css("display", "block"); 
+          $("#homebsc").css("display", "none");
+         $("#homebscc").css("display", "none"); 
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+           
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+      
+    });
+    
+     $("a#mhomebm2m").click(function() {
+        $("#homebm2m").css("display", "block");
+          $("#homebm2mc").css("display", "block");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+        $("a#mhomebm2m").css("background-color", "#4ed2bee0")
+   	$("a#mhomepm2m").css("background-color","#007bff")
+   	$("a#mbussm2m").css("background-color", "#6c757d")
+   	$("a#mbussum2m").css("background-color","#6c757d")
+   	$("a#mbusswm2m").css("background-color","#6c757d")
+    });
+     $("a#mhomepm2m").click(function() {
+        $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "block");
+          $("#homepm2mc").css("display", "block");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+        $("a#mhomebm2m").css("background-color", "#007bff")
+   	$("a#mhomepm2m").css("background-color","#4ed2bee0")
+   	$("a#mbussm2m").css("background-color", "#6c757d")
+   	$("a#mbussum2m").css("background-color","#6c757d")
+   	$("a#mbusswm2m").css("background-color","#6c757d")
+    });
+   
+    $("a#mbussm2m").click(function() {
+        $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "block");
+          $("#bussm2mc").css("display", "block"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+            $("a#mhomebm2m").css("background-color", "#007bff")
+   	$("a#mhomepm2m").css("background-color","#007bff")
+   	$("a#mbussm2m").css("background-color", "#4ed2bee0")
+   	$("a#mbussum2m").css("background-color","#6c757d")
+   	$("a#mbusswm2m").css("background-color","#6c757d")
+    });
+     $("a#mbussum2m").click(function() {
+        $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "block");
+          $("#bussum2mc").css("display", "block");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+              $("a#mhomebm2m").css("background-color", "#007bff")
+   	$("a#mhomepm2m").css("background-color","#007bff")
+   	$("a#mbussm2m").css("background-color", "#6c757d")
+   	$("a#mbussum2m").css("background-color","#4ed2bee0")
+   	$("a#mbusswm2m").css("background-color","#6c757d")
+    });
+    $("a#mbusswm2m").click(function() {
+        $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "block");
+          $("#busswm2mc").css("display", "block");
+          
+              $("a#mhomebm2m").css("background-color", "#007bff")
+   	$("a#mhomepm2m").css("background-color","#007bff")
+   	$("a#mbussm2m").css("background-color", "#6c757d")
+   	$("a#mbussum2m").css("background-color","#6c757d")
+   	$("a#mbusswm2m").css("background-color","#4ed2bee0")
+    });
+    
+     $("a#mhomebsc").click(function() {
+        $("#homebsc").css("display", "block");
+          $("#homebscc").css("display", "block");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+               $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+           $("a#mhomebsc").css("background-color", "#4ed2bee0")
+   	$("a#mhomepsc").css("background-color","#007bff")
+   	$("a#mbusssc").css("background-color", "#6c757d")
+   	$("a#mbussusc").css("background-color","#6c757d")
+   	$("a#mbusswsc").css("background-color","#6c757d")
+          
+          
+    });
+     $("a#mhomepsc").click(function() {
+        $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "block");
+          $("#homepscc").css("display", "block");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+               $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+         $("a#mhomebsc").css("background-color", "#007bff")
+   	$("a#mhomepsc").css("background-color","#4ed2bee0")
+   	$("a#mbusssc").css("background-color", "#6c757d")
+   	$("a#mbussusc").css("background-color","#6c757d")
+   	$("a#mbusswsc").css("background-color","#6c757d")
+         
+    });
+   
+    $("a#mbusssc").click(function() {
+        $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "block");
+          $("#bussscc").css("display", "block"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+               $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+              $("a#mhomebsc").css("background-color", "#007bff")
+   	$("a#mhomepsc").css("background-color","#007bff")
+   	$("a#mbusssc").css("background-color", "#4ed2bee0")
+   	$("a#mbussusc").css("background-color","#6c757d")
+   	$("a#mbusswsc").css("background-color","#6c757d")
+    });
+     $("a#mbussusc").click(function() {
+        $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "block");
+          $("#bussuscc").css("display", "block");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+               $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+         $("a#mhomebsc").css("background-color", "#007bff")
+   	$("a#mhomepsc").css("background-color","#007bff")
+   	$("a#mbusssc").css("background-color", "#6c757d")
+   	$("a#mbussusc").css("background-color","#4ed2bee0")
+   	$("a#mbusswsc").css("background-color","#6c757d")
+    });
+    $("a#mbusswsc").click(function() {
+        $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "block");
+          $("#busswscc").css("display", "block");
+          $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          
+       $("a#mhomebsc").css("background-color", "#007bff")
+   	$("a#mhomepsc").css("background-color","#007bff")
+   	$("a#mbusssc").css("background-color", "#6c757d")
+   	$("a#mbussusc").css("background-color","#6c757d")
+   	$("a#mbusswsc").css("background-color","#4ed2bee0")
+    });
+     
+     $("a#mhomebhc").click(function() {
+        $("#homebhc").css("display", "block");
+          $("#homebhcc").css("display", "block");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+          
+          $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+          
+          
+            $("a#mhomebhc").css("background-color", "#4ed2bee0")
+   	$("a#mhomephc").css("background-color","#007bff")
+   	$("a#mbusshc").css("background-color", "#6c757d")
+   	$("a#mbussuhc").css("background-color","#6c757d")
+   	$("a#mbusswhc").css("background-color","#6c757d")
+   	
+   
+   	
+
+   	
+  
+   	
+   	  
+   	
+    });
+     $("a#mhomephc").click(function() {
+        $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "block");
+          $("#homephcc").css("display", "block");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+          
+          	   $("a#mhomebhc").css("background-color", "#007bff")
+   	$("a#mhomephc").css("background-color","#4ed2bee0")
+   	$("a#mbusshc").css("background-color", "#6c757d")
+   	$("a#mbussuhc").css("background-color","#6c757d")
+   	$("a#mbusswhc").css("background-color","#6c757d")
+    });
+   
+    $("a#mbusshc").click(function() {
+        $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "block");
+          $("#busshcc").css("display", "block"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+          
+             	   $("a#mhomebhc").css("background-color", "#007bff")
+   	$("a#mhomephc").css("background-color","#007bff")
+   	$("a#mbusshc").css("background-color", "#4ed2bee0")
+   	$("a#mbussuhc").css("background-color","#6c757d")
+   	$("a#mbusswhc").css("background-color","#6c757d")
+    });
+     $("a#mbussuhc").click(function() {
+        $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "block");
+          $("#bussuhcc").css("display", "block");
+          $("#busswhc").css("display", "none");
+          $("#busswhcc").css("display", "none");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+          
+           	   $("a#mhomebhc").css("background-color", "#007bff")
+   	$("a#mhomephc").css("background-color","#007bff")
+   	$("a#mbusshc").css("background-color", "#6c757d")
+   	$("a#mbussuhc").css("background-color","#4ed2bee0")
+   	$("a#mbusswhc").css("background-color","#6c757d")
+    });
+    $("a#mbusswhc").click(function() {
+        $("#homebhc").css("display", "none");
+          $("#homebhcc").css("display", "none");       
+          $("#homephc").css("display", "none");
+          $("#homephcc").css("display", "none");
+          $("#busshc").css("display", "none");
+          $("#busshcc").css("display", "none"); 
+          $("#bussuhc").css("display", "none");
+          $("#bussuhcc").css("display", "none");
+          $("#busswhc").css("display", "block");
+          $("#busswhcc").css("display", "block");
+             $("#homebm2m").css("display", "none");
+          $("#homebm2mc").css("display", "none");       
+          $("#homepm2m").css("display", "none");
+          $("#homepm2mc").css("display", "none");
+          $("#bussm2m").css("display", "none");
+          $("#bussm2mc").css("display", "none"); 
+          $("#bussum2m").css("display", "none");
+          $("#bussum2mc").css("display", "none");
+          $("#busswm2m").css("display", "none");
+          $("#busswm2mc").css("display", "none");
+          $("#homebsc").css("display", "none");
+          $("#homebscc").css("display", "none");       
+          $("#homepsc").css("display", "none");
+          $("#homepscc").css("display", "none");
+          $("#busssc").css("display", "none");
+          $("#bussscc").css("display", "none"); 
+          $("#bussusc").css("display", "none");
+          $("#bussuscc").css("display", "none");
+          $("#busswsc").css("display", "none");
+          $("#busswscc").css("display", "none");
+          
+           $("a#mhomebhc").css("background-color", "#007bff")
+   	$("a#mhomephc").css("background-color","#007bff")
+   	$("a#mbusshc").css("background-color", "#6c757d")
+   	$("a#mbussuhc").css("background-color","#6c757d")
+   	$("a#mbusswhc").css("background-color","#4ed2bee0")
+    });
+    $('#Town').change(function () {
+
+      
+        var richardsbay = {
+            "Alton": "Alton",
+            "Arboretum": "Arboretum",
+            "BirdsWood": "BirdsWood",
+            "Brackenham": "Brackenham",
+            "Meer En See": "Meer En See",
+            "Richards Bay Central": "Richards Bay Central",
+            "Veld En Vlei": "Veld En Vlei",
+            "Wild En Weide": "Wild En Weide"
+        };
+        var felixton = {
+            "Felixton": "Felixton"
+        };
+        var empangeni = {
+            "Noodsig": "Noodsig",
+            "NyalaPark": "Nyala Park",
+            "Panorama": "Panorama",
+            "Kildare": "Kildare",
+            "RICHEM": "Richem",
+            "Grantham Park": "Grantham Park",
+            "Mpangele": "Mpangele",
+            "Kuleka": "Kuleka",
+            "FairView": "Fair View"
+        };
+        var val = $('#Town option:selected').val();
+        var $el = $("#Suburb");
+        $el.empty(); // remove old options
+
+        if(val == "richardsbay") {
+            $.each(richardsbay, function (key, value) {
+                $el.append($("<option></option>")
+                   .attr("value", value).text(key));
+            });}
+        else if( val == "empangeni"){
+            $.each(empangeni, function (key, value) {
+                $el.append($("<option></option>")
+                   .attr("value", value).text(key));
+            });}
+        else if (val == "felixton"){
+        $.each(felixton, function (key, value) {
+            $el.append($("<option></option>")
+               .attr("value", value).text(key));
+        });
+    }
+  
+    });
+    
+});
+</script>
+
+  </head>
+
+  <body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal">P & C ICT Solutions</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="index.html">Home</a>
+        <a class="p-2 text-dark" href="pricing.html">Pricing</a>      
+        <a class="p-2 text-dark" href="contactus.html">Contacts</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="#">Sign up</a>
+    </div>
+
+   
+</br>
+
+<!-- Menu-->
+<div class="text-center">
+<div class="btn-group btn-group-toggle " data-toggle="buttons" >  
+ <a href="#" class="btn btn-primary btn-lg " role="button" aria-pressed="false" id="m2m" >Month 2 Month</a>
+ <a href="#" class="btn btn-primary btn-lg " role="button" aria-pressed="false" id="sc">Straight Contract</a>
+ <a href="#" class="btn btn-primary  btn-lg " role="button" aria-pressed="false" id="hc">Hardware Contract</a>
+</div>
+</br>
+</br>
+<div id="submenum2m" class="btn-group btn-group-toggle" data-toggle="buttons" style="display:block;">  
+ <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="mhomebm2m" >Home Basic M2M</a>
+ <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="mhomepm2m">Home Premium M2M</a>
+  <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="mbussm2m" >Business M2M</a>
+ <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="mbussum2m">Business Uploader M2M</a>
+  <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="mbusswm2m" >Business Worker M2M</a>
+
+</div>
+
+<div id="submenusc" class="btn-group btn-group-toggle" data-toggle="buttons" style="display:none;">  
+ <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="mhomebsc" >Home Basic SC</a>
+ <a href="#" class="btn btn-primary btn-lg " role="button" aria-pressed="true" id="mhomepsc">Home Premium SC</a>
+  <a href="#" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" id="mbusssc" >Business SC</a>
+ <a href="#" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" id="mbussusc">Business Uploader SC</a>
+  <a href="#" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" id="mbusswsc" >Business Worker SC</a>
+</div>
+<div id="submenuhc" class="btn-group btn-group-toggle" data-toggle="buttons" style="display:none;">  
+ <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="mhomebhc" >Home Basic HC</a>
+ <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="mhomephc">Home Premium HC</a>
+  <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="mbusshc" >Business HC</a>
+ <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="mbussuhc">Business Uploader HC</a>
+  <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="mbusswhc" >Business Worker HC</a>
+</div>
+</div>
+<!-- Containers -->
+
+</br>
+
+  <div id="homebm2m" class="container" style="display:block;">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">2 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R403.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+            <button type="button" id="2mbps" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal"  data-id="Home Basic 2mbps m2m" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R605.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal"  data-id="Home Basic 4mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R807.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" data-id="Home Basic 6mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">8 Mbps</h4>
+          </div>
+          <div class="card-body">
+             <h1 class="card-title pricing-card-title">R1009.<small>00</small><small class="text-muted"> / PM</small></h1>
+           
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" data-id="Home Basic 8mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R1211.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 10mbps m2m " >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic Custom Link m2m" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="homepm2m" class="container" style="display:none;">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">2 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R504.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 2mbps m2m" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R807.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 4mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1110.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 6mbps m2m" >Order</button>
+          </div>
+        </div>
+         <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">8 Mbps</h4>
+          </div>
+          <div class="card-body">
+             <h1 class="card-title pricing-card-title">R1312.<small>00</small><small class="text-muted"> / PM</small></h1>
+           
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 8mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R1514.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 10mbps m2m" >Order</button>
+          </div>
+          </div>
+           <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium Custom Link m2m" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="bussm2m" class="container" style="display:none;">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R908.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 4mbps m2m" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1312.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 6mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2221.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 10mbps m2m" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Custom Link m2m" >Order</button>
+          </div>
+        </div>
+        
+ </div>
+ </div>
+ <div id="bussum2m" class="container" style="display:none;">
+       <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1211.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 4mbps m2m" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1918.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 6mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R3029.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 10mbps m2m" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader Custom Link m2m" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="busswm2m" class="container" style="display:none;">
+     <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1817.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 4mbps m2m" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2827.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 6mbps m2m" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R4544.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 10mbps m2m" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker Custom Link m2m" >Order</button>
+          </div>
+        </div>
+ </div>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ <!-- SC -->
+ 
+ 
+ 
+ <div id="homebsc" class="container" style="display:none;">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">2 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R382.<small>85</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 2mbps sc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R574.<small>75</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 4mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R766.<small>65</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 6mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">8 Mbps</h4>
+          </div>
+          <div class="card-body">
+             <h1 class="card-title pricing-card-title">R958.<small>55</small><small class="text-muted"> / PM</small></h1>
+           
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 8mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R1150.<small>45</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 10mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic Custom Link sc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="homepsc" class="container" style="display:none;">
+     <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">2 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R478.<small>80</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 2mbps sc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R766.<small>65</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 4mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1054.<small>50</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 6mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">8 Mbps</h4>
+          </div>
+          <div class="card-body">
+             <h1 class="card-title pricing-card-title">R1246.<small>40</small><small class="text-muted"> / PM</small></h1>
+           
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 8mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R1438.<small>30</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 10mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium Custom Link sc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="busssc" class="container" style="display:none;">
+     <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R862.<small>60</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 4mbps sc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1246.<small>40</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 6mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2109.<small>95</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 10mbps sc" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Custom Link SC" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="bussusc" class="container" style="display:none;">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1150.<small>45</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 4mbps sc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1822.<small>10</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 6mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2877.<small>55</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 10mbps sc" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader Custom Link sc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="busswsc" class="container" style="display:none;">
+     <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1726.<small>15</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 4mbps sc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2685.<small>65</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 6mbps sc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R4316.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 10mbps sc" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker Custom Link sc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ 
+ 
+ <!-- HC -->
+ 
+ 
+ 
+ 
+ <div id="homebhc" class="container" style="display:none;">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">2 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R642.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 2mbps hc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R844.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 4mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1046.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 6mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">8 Mbps</h4>
+          </div>
+          <div class="card-body">
+             <h1 class="card-title pricing-card-title">R1248.<small>00</small><small class="text-muted"> / PM</small></h1>
+           
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 8mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R1450.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic 10mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Basic Custom Link hc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="homephc" class="container" style="display:none;">
+       <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">2 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R743.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 2mbps hc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1046.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 4mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1349.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 6mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">8 Mbps</h4>
+          </div>
+          <div class="card-body">
+             <h1 class="card-title pricing-card-title">R1551.<small>00</small><small class="text-muted"> / PM</small></h1>
+           
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 8mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R1753.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium 10mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Home Premium Custom Link hc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="busshc" class="container" style="display:none;">
+     <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1147.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 4mbps hc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1551.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 6mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2460.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business 10mbps hc" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Custom Link hc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="bussuhc" class="container" style="display:none;">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R1450.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 4mbps hc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2157.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 6mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R3268.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader 10mbps hc" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Uploader Custom Link hc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+ <div id="busswhc" class="container" style="display:none;">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">4 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R2056.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 4mbps hc" >Order</button>
+          </div>
+        </div>
+      
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">6 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R3066.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 6mbps hc" >Order</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">10 Mbps</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R4783.<small>00</small><small class="text-muted"> / PM</small></h1>
+          
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker 10mbps hc" >Order</button>
+          </div>
+        </div>
+            <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Upsize your line</h4>
+          </div>
+          <div class="card-body">
+           <h1 class="card-title pricing-card-title">R???.<small>00</small><small class="text-muted"> / PM</small></h1>
+            
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary"data-toggle="modal" data-target="#myModal" data-id="Business Worker Custom Link hc" >Order</button>
+          </div>
+        </div>
+ </div>
+ </div>
+      <!-- New Body for popup -->
+        <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog" >
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">
+                                Contact Us
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="post" id="reused_form">
+                                <p> Send your message in the form below and we will get back to you as early as possible. </p>
+                                <table><tr><td>
+                                <div class="form-group">
+                                    <label for="name"> Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                                </div></td><td>
+                                <div class="form-group">
+                                    <label for="email"> Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                                </div><td></tr>
+                                <tr><td>
+    <div class="form-group">
+        <label for="telephone"> Telephone:</label>
+        <input type="text" class="form-control" id="telephone" name="telephone"  required  maxlength="10">
+    </div>
+</td><td>
+    <div class="form-group">
+        <label for="cellphone"> CellPhone:</label>
+        <input type="text" class="form-control" id="cellphone" name="cellphone" pattern=".{10,10}" required maxlength="10" title="10 Digit Landline" >
+    </div>
+</td></tr> 
+                             <tr>
+                                 <td>
+                                     <div class="form-group"><label for="Town" name="Town"> Town: </label>
+                                     <select id="Town" name="Town" class="form-control" title="-- Select Town --">
+             <option value="none">-- Select Town --</option>                                                                                         
+    <option value="richardsbay">Richards Bay</option>
+    <option value="empangeni">Empangeni</option>
+    <option value="felixton">Felixton</option>
+    
+</select></div>
+                                 </td>
+                                 <td>
+                                     <div class="form-group ">
+                                         <label for="Suburb" name="Suburb"> Suburb: </label>
+                                         <select id="Suburb" name="Suburb" class="form-control">
+                                             <option value="alton">-- Select Suburb--</option>                                            
+                                         </select>
+                                     </div>
+                                 </td>
+                                    </tr>  
+                                <tr><td>
+                                    <div class="form-group">
+                                        <label for="Street Address"> Address:</label>
+                                        <input type="text" class="form-control" id="Street Address" name="Street Address" required maxlength="100">
+                                    </div></td><td>
+                                    <div class="form-group">
+                                        <label for="line"> Line Selection:</label>
+                                        <input type="text" class="form-control" id="line" name="line" maxlength="50">
+                                    </div></td>
+                                </tr></table>
+                                <div class="form-group">
+                                    <label for="name"> Message:</label>
+                                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-success " id="btnContactUs">Post It! &rarr;</button>
+                            </form>
+                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+    <!--comments-->
+<div id="homebm2mc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:block;">
+      <p>
+     <ul><li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+</ul></p>  </div>
+<div id="homepm2mc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+        <p>
+     <ul><li>Upload same as Download.</li>
+      <li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+</ul></p>
+    
+    </div>  
+<div id="bussm2mc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>	
+ All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>5 Days a Week, 8 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+
+</ul></p>
+    
+    </div>
+<div id="bussum2mc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>Perfect for dedicated services usage like, Dropbox, Onedrive, Remote Storage, File Server Hosting, etc.</li>
+<li>Ties into any existing network setup.</li>
+<li>5 Days a Week, 8 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+
+</ul></p>
+    
+    </div>
+<div id="busswm2mc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>Perfect for dedicated services usage like, Dropbox, Onedrive, Remote Storage, File Server Hosting, etc.</li>
+<li>Ties into any existing network setup.</li>
+<li>7 Days a Week, 24 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+</ul></p>
+    
+    </div>
+<div id="homebscc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+
+</ul></p>
+    
+    </div>
+<div id="homepscc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+</ul></p>
+    
+    </div>
+<div id="bussscc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>5 Days a Week, 8 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+
+</ul></p>
+    
+    </div>
+<div id="bussuscc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>Perfect for dedicated services usage like, Dropbox, Onedrive, Remote Storage, File Server Hosting, etc.</li>
+<li>Ties into any existing network setup.</li>
+<li>5 Days a Week, 8 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+</ul></p>
+    
+    </div>
+<div id="busswscc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>Perfect for dedicated services usage like, Dropbox, Onedrive, Remote Storage, File Server Hosting, etc.</li>
+<li>Ties into any existing network setup.</li>
+<li>7 Days a Week, 24 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Up-front hardware cost starting from R 2108 (Depending on requirements)</li>
+
+</ul></p>
+    
+    </div>
+<div id="homebhcc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Hardware and Installation included.</li>
+
+</ul></p>
+    
+    </div>
+<div id="homephcc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Hardware and Installation included.</li>
+
+</ul></p>
+    
+    </div>
+<div id="busshcc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>No land-line required.</li>
+<li>Ties into any existing network setup.</li>
+<li>5 Days a Week, 8 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Hardware and Installation included.</li>
+
+</ul></p>
+    
+    </div>
+<div id="bussuhcc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>Perfect for dedicated services usage like, Dropbox, Onedrive, Remote Storage, File Server Hosting, etc.</li>
+<li>Ties into any existing network setup.</li>
+<li>5 Days a Week, 8 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Hardware and Installation included.</li>
+
+</ul></p>
+    
+    </div>
+<div id="busswhcc" class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-left" style="display:none;">
+      <p>
+     <ul><li>12 Month Contract.</li>
+<li>Upload same as Download.</li>
+<li>All our uplinks are Fibre quality with only last mile being passed on over WiFi equipment.</li>
+<li>Perfect for dedicated services usage like, Dropbox, Onedrive, Remote Storage, File Server Hosting, etc.</li>
+<li>Ties into any existing network setup.</li>
+<li>7 Days a Week, 24 Hours per Day SLA.</li>
+<li>Perfect for any Small to Medium Enterprise.</li>
+<li>We will assist in resolving any Domain and Email complications.</li>
+<li>All packages are totally uncapped and unshaped with zero throttling.</li>
+<li>Hardware and Installation included.
+
+</ul></p>
+    
+    </div>
+	
+<div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
