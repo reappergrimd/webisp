@@ -681,7 +681,7 @@ $(".btn-block").click (function(){
     });
     $('#Town').change(function () {
 
-      
+        //suburb variables  and Selections
         var richardsbay = {
             "Alton": "Alton",
             "Arboretum": "Arboretum",
@@ -706,6 +706,7 @@ $(".btn-block").click (function(){
             "Kuleka": "Kuleka",
             "FairView": "Fair View"
         };
+        
         var val = $('#Town option:selected').val();
         var $el = $("#Suburb");
         $el.empty(); // remove old options
@@ -728,25 +729,23 @@ $(".btn-block").click (function(){
     }
   
     });
-    
+    //end suburb
 });
 </script>
 
   </head>
 
   <body>
-
+      <!-- Top Menu--> 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">P & C ICT Solutions</h5>
+      <h5 class="my-0 mr-md-auto font-weight-normal"><img height="30px" src="http://pandcict.co.za/PandC%20wireless-logo.png" />  P & C ICT Solutions</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="index.html">Home</a>
         <a class="p-2 text-dark" href="pricing.html">Pricing</a>      
         <a class="p-2 text-dark" href="contactus.html">Contacts</a>
       </nav>
       <a class="btn btn-outline-primary" href="#">Sign up</a>
-    </div>
-
-   
+    </div>   
 </br>
 
 <!-- Menu-->
